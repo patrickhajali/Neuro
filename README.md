@@ -1,9 +1,9 @@
 
-I came across LFP recordings and explored what it's like working with neuro data. For a quick overview, see [nb.ipynb]. 
+I came across LFP recordings and explored what it's like working with neuro data. For a quick overview, see this [notebook][nb.ipynb]. 
 
 More about what I did [here](www.patrickhajali.com/neuro). 
 
-### What is added ontop of [Open-Ephys](https://github.com/open-ephys/open-ephys-python-tools)
+#### What I added ontop of [Open-Ephys](https://github.com/open-ephys/open-ephys-python-tools)
 
 An ```LFPSession``` is designed to be created once to load the desired Open-Ephys session.
 
