@@ -1,0 +1,1 @@
+{"info": "channels are indexed from 0 to 63, with the left hemisphere being channels 0-31 and the right hemisphere being channels 32-63. Lists are ordered in increasing depth in the brain.", "left": [12, 28, 19, 3, 14, 30, 2, 18, 15, 31, 0, 16, 1, 17, 13, 29], "right": [44, 60, 51, 35, 46, 62, 34, 50, 47, 63, 32, 48, 33, 49, 45, 61]}

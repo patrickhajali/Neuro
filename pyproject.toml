@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "beatrice-brain"
+version = "0.1.0"
+description = "Analyzing neuro data (from UBB's lab)"
+authors = ["Patrick Hajali <hajalipat@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+ipykernel = "^6.29.2"
+matplotlib = "^3.8.2"
+numpy = "^1.26.4"
+open-ephys-python-tools = "^0.1.7"
+scipy = "^1.12.0"
+mpld3 = "^0.5.10"
+ipywidgets = "^8.1.2"
+plotly = "^5.19.0"
+pyqt5 = "^5.15.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
