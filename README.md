@@ -1,7 +1,7 @@
 
 I came across LFP recordings and explored what it's like working with neuro data. For a quick overview, see this [notebook][nb.ipynb]. 
 
-More about what I did ![here](www.patrickhajali.com/neuro). 
+More about what I did [here](https://www.patrickhajali.com/neuro). 
 
 #### What I added ontop of [Open-Ephys](https://github.com/open-ephys/open-ephys-python-tools)
 
