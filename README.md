@@ -1,5 +1,5 @@
 
-I came across LFP recordings and explored what it's like working with neuro data. For a quick overview, see this [notebook][nb.ipynb]. 
+I came across LFP recordings and explored what it's like working with neuro data.
 
 More about what I did [here](https://www.patrickhajali.com/neuro). 
 
