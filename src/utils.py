@@ -2,6 +2,7 @@ import json
 import os 
 import matplotlib.pyplot as plt
 import numpy as np
+import mpld3
 
 
 def load_channel_layout(path):
@@ -45,13 +46,14 @@ def plot_hilbert(signal, amp, freq, fs, left=0, right=20, bottom=0, top=10):
     ax1.set_ylim(bottom, top)
     fig.tight_layout()
     plt.show()
+    plt.savefig('hilbert.png')
 
 def plot_waveforms(data, session, samples = None,  other_data = [], other_data_labels = []):
 
     if samples is None:
         samples = data.samples
 
-    fig = plt.figure()
+    fig = plt.figure() # figsize=(3.3,2.5)
     plt.ion()
 
     y_min = samples.min()
@@ -68,7 +70,7 @@ def plot_waveforms(data, session, samples = None,  other_data = [], other_data_l
     
     plt.bar(x=[x[0] for x in data.event_windows], height=-(y_max-y_min)*(samples.shape[1] + len(other_data)) - y_max, 
             width=[x[1]-x[0] for x in data.event_windows], align='edge',bottom=2*y_max,
-              alpha=0.35, color='r')
+              alpha=0.35, color='purple')
 
     num_xticks = 10
     tick_spacing = len(s) // num_xticks
@@ -86,4 +88,6 @@ def plot_waveforms(data, session, samples = None,  other_data = [], other_data_l
 
     plt.yticks(ticks=[-i*(y_max-y_min) for i in range(samples.shape[1] + len(other_data))], labels=ylabels)
     plt.show()
+    # mpld3.save_html(fig, 'interactive.html', template_type='simple')
+
 
